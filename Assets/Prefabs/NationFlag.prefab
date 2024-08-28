@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2552292750781113025}
   - component: {fileID: 7718422088669611440}
   - component: {fileID: 1927540597710068874}
+  - component: {fileID: 3167960562366522003}
   m_Layer: 0
   m_Name: NationFlag
   m_TagString: Untagged
@@ -108,6 +109,20 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!114 &3167960562366522003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 70060049981753168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18fc40bb4d671ea48b6d25e0ccccbad3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterList: []
+  population: 0
 --- !u!1 &685700286757490562
 GameObject:
   m_ObjectHideFlags: 0

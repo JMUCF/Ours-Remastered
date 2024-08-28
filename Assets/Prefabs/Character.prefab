@@ -119,7 +119,7 @@ GameObject:
   - component: {fileID: 4080381536596821633}
   - component: {fileID: 3632606873610461362}
   - component: {fileID: 4449853722730645973}
-  - component: {fileID: 8356720560122813930}
+  - component: {fileID: 6211622623832044919}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -216,7 +216,7 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8356720560122813930
+--- !u!114 &6211622623832044919
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -230,5 +230,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hunger: 0
   sleep: 0
-  nation: {fileID: 0}
   job: 
+  nation: {fileID: 3167960562366522003, guid: 97657d79837655d4b9ab5835d09d7de6, type: 3}

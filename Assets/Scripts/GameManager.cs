@@ -11,21 +11,20 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         characterList = Nation.characterList;
-        HungerControl();
+        StartCoroutine("HungerCoroutine");
     }
 
-    // Update is called once per frame
-    void Update()
+    private IEnumerator HungerCoroutine()
     {
-        
+        yield return new WaitForSeconds(4);
+        LowerHunger();
     }
 
-    void HungerControl()
+    void LowerHunger()
     {
         Debug.Log("in hunger control");
         for(int i = 0; i < characterList.Count; i++)
         {
-            Debug.Log(i);
             characterList[i].hunger--;
         }
     }
