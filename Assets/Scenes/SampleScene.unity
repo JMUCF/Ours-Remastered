@@ -288,6 +288,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Character (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6211622623832044919, guid: 29f2c80876ebbcc4e96d0e9f90548bdd, type: 3}
+      propertyPath: job
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6813109610222464525, guid: 29f2c80876ebbcc4e96d0e9f90548bdd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.11

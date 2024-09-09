@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         characterList = Nation.characterList;
-        StartCoroutine("HungerCoroutine");
+        //StartCoroutine("HungerCoroutine");
     }
 
     private IEnumerator HungerCoroutine()

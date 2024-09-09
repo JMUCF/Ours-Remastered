@@ -6,7 +6,8 @@ public class Character : MonoBehaviour
 {
     public int hunger;
     public int sleep;
-    public string job;
+    public enum Jobs {none, farmer, lumberjack};
+    public Jobs job;
     public Nation nation;
 
     void Start()
@@ -18,6 +19,7 @@ public class Character : MonoBehaviour
         if (nation != null)
         {
             nation.AddCharacter(this);
+            nation.JobSelect(this, job);
         }
         else
         {
