@@ -6,4 +6,5 @@ public class Tile : MonoBehaviour
 {
     public enum TileType {none, farmland, forest};
     public TileType type;
+    public Character owner;
 }

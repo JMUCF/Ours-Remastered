@@ -46,6 +46,7 @@ public class CharacterMove : MonoBehaviour
         Debug.Log("Number of tiles found: " + tiles.Length);
 
         // Based on the character's job, choose the target tile type
+        //THIS NEEDS TO BE CHANGED TO LOOK FOR AN UNASSIGNED TILE AND CHANGE THE TYPE BASED ON WHAT THE CHARACTER IS
         Tile.TileType targetType = Tile.TileType.none;
 
         switch (character.job)
@@ -66,13 +67,14 @@ public class CharacterMove : MonoBehaviour
         float closestDistance = Mathf.Infinity;
         foreach (Tile tile in tiles)
         {
-            if (tile.type == targetType)
+            if (tile.type == targetType && tile.owner == null)
             {
                 float distance = Vector3.Distance(transform.position, tile.transform.position);
                 if (distance < closestDistance)
                 {
                     closestDistance = distance;
                     targetTile = tile;
+                    tile.owner = character;
                 }
             }
         }
