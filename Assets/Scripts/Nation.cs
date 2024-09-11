@@ -7,12 +7,15 @@ public class Nation : MonoBehaviour
     public List<Character> characterList = new List<Character>();
     private int population;
     private int farmerCount;
+    public int wheat;
     private int lumberjackCount;
+    public int wood;
 
     public void Awake()
     {
         population = 0;
         farmerCount = 0;
+        wheat = 0;
         lumberjackCount = 0;
     }
 

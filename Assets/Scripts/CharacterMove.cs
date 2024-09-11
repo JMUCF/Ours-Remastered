@@ -67,14 +67,15 @@ public class CharacterMove : MonoBehaviour
         float closestDistance = Mathf.Infinity;
         foreach (Tile tile in tiles)
         {
-            if (tile.type == targetType && tile.owner == null)
+            if (tile.owner == null && character.tile == null)
             {
                 float distance = Vector3.Distance(transform.position, tile.transform.position);
+                tile.owner = character;
+                character.tile = tile;
                 if (distance < closestDistance)
                 {
                     closestDistance = distance;
                     targetTile = tile;
-                    tile.owner = character;
                 }
             }
         }
