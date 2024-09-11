@@ -120,6 +120,8 @@ GameObject:
   - component: {fileID: 3632606873610461362}
   - component: {fileID: 4449853722730645973}
   - component: {fileID: 6211622623832044919}
+  - component: {fileID: 1955431666772325697}
+  - component: {fileID: 3589091563425796624}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -230,5 +232,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hunger: 0
   sleep: 0
-  job: 
-  nation: {fileID: 3167960562366522003, guid: 97657d79837655d4b9ab5835d09d7de6, type: 3}
+  job: 0
+--- !u!195 &1955431666772325697
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6077362255712844524}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 1
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &3589091563425796624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6077362255712844524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd13682f661d45e4a8f90c7310f82fdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

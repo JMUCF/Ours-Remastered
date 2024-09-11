@@ -8,22 +8,19 @@ public class Character : MonoBehaviour
     public int sleep;
     public enum Jobs {none, farmer, lumberjack};
     public Jobs job;
-    public Nation nation;
+    private Nation nation;
 
     void Start()
     {
         hunger = 10;
         sleep = 10;
-
-        // Ensure the nation is set before trying to add the character
-        if (nation != null)
-        {
-            nation.AddCharacter(this);
-            nation.JobSelect(this, job);
-        }
-        else
-        {
-            Debug.LogWarning("Nation reference is not set in Character.");
-        }
+        nation = FindObjectOfType<Nation>();
+        nation.AddCharacter(this);
+        nation.JobSelect(this, job);
     }
+}
+
+public class Farmer : MonoBehaviour
+{
+
 }
